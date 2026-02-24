@@ -73,3 +73,11 @@ Run the development server:
 ```bash
 npm run dev
 ```
+
+##  Login Credentials
+
+Use the following credentials to access the application:
+
+- **Username:** `testuser`  
+- **Password:** `Test123`
+
