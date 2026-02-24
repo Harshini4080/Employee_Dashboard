@@ -59,7 +59,7 @@ It is a React-based Employee Dashboard application that displays employee data w
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+https://github.com/Harshini4080/Employee_Dashboard.git
 ```
 Navigate into the project:
 ```bash
