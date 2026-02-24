@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Navbar === */
+.navbar {
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #111827;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.back-btn {
+  padding: 6px 14px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #4f46e5;
+}
+
+
+
+/* ===== LOGIN PAGE ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1f1f3a, #2a2a72);
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  padding: 50px 45px;
+  width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* Title */
+.login-card h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 10px 0 35px 0;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  background: #f9fafb;
+  transition: 0.2s ease;
+}
+
+.login-card input:focus {
+  border-color: #6366f1;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  outline: none;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+}
+
+/* LIST PAGE */
+
+.list-container {
+  padding: 50px 70px;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.list-header h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Top Buttons */
+.list-actions button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.list-actions button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+/* Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.employee-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Name */
+.employee-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #111827;
+}
+
+/* Text */
+.employee-card p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 6px 0;
+}
+
+.employee-card strong {
+  color: #1f2937;
+}
+
+/* Details Button */
+.details-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f3f4f6;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.details-btn:hover {
+  background: #6366f1;
+  color: white;
+}
+
+/* === DETAILS PAGE === */
+
+.details-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.details-card {
+  background: white;
+  width: 450px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.details-card h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #111827;
+  text-align: center;
+}
+
+.profile-info p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #374151;
+}
+
+.profile-info strong {
+  color: #111827;
+}
+
+/* Camera Section */
+.camera-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.camera-section video {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Buttons */
+.primary-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.secondary-btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #e5e7eb;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ===CHART PAGE=== */
+
+.chart-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+  text-align: center;
+}
+
+.chart-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.chart-card {
+  width: 100%;
+  max-width: 1100px;
+  background: white;
+  padding: 50px 60px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.12);
+}
+
+.chart-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.chart-header h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.chart-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.chart-wrapper {
+  height: 450px;
+}
+
+.chart-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+}
+
+/* === Page background === */
+.map-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.map-card {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.map-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.map-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Map area */
+.map-wrapper {
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Remove leaflet default margin */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.leaflet-popup-content {
+  font-size: 14px;
+  font-weight: 500;
+}
